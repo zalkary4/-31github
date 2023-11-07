@@ -1,4 +1,4 @@
-# growthhungry_31_github
+# day_1
 
 A new Flutter project.
 

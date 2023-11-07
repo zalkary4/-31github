@@ -1,4 +1,4 @@
-package com.example.growthhungry_31_github
+package com.example.day_1
 
 import io.flutter.embedding.android.FlutterActivity
 
