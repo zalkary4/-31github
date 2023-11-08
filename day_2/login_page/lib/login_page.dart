@@ -5,7 +5,9 @@ class LoginPage extends StatelessWidget {
 
   var exampleMail = 'mail@gmail.com';
   var exampleNumber = '+996123456789';
-  String userPhoneNumber = '';
+  var phoneNumberContr = TextEditingController();
+  var emailContr = TextEditingController();
+  // String userPhoneNumber = '';
 
   @override
   Widget build(BuildContext context) {
@@ -35,6 +37,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               TextFormField(
+                controller: phoneNumberContr,
                 style: const TextStyle(color: Colors.green),
                 decoration: const InputDecoration(
                   filled: true,
@@ -49,13 +52,14 @@ class LoginPage extends StatelessWidget {
                     color: Colors.green,
                   ),
                 ),
-                onChanged: (phoneNumber) {
-                  userPhoneNumber = phoneNumber;
-                  print(userPhoneNumber);
-                },
+                // onChanged: (phoneNumber) {
+                //   userPhoneNumber = phoneNumber;
+                //   print(userPhoneNumber);
+                // },
               ),
               const SizedBox(height: 20),
               TextFormField(
+                controller: emailContr,
                 style: TextStyle(color: Colors.green),
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -69,7 +73,10 @@ class LoginPage extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  print(phoneNumberContr.text);
+                  print(emailContr.text);
+                },
                 child: Text('Login'),
               )
             ],
