@@ -87,10 +87,19 @@ class LoginPage extends StatelessWidget {
                       ),
                     );
                   } else {
-                    print('Something wrong');
+                    // print('Something wrong');
+                    showDialog(
+                      context: context,
+                      builder: (ctx) {
+                        return const AlertDialog(
+                          title: Text('Error'),
+                          content: Text('Wrong number or e-mail'),
+                        );
+                      },
+                    );
                   }
                 },
-                child: Text('Login'),
+                child: const Text('Login'),
               )
             ],
           ),
