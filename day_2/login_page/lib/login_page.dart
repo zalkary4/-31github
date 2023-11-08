@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  LoginPage({super.key});
+
+  var exampleMail = 'mail@gmail.com';
+  var exampleNumber = '+996123456789';
+  String userPhoneNumber = '';
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +49,10 @@ class LoginPage extends StatelessWidget {
                     color: Colors.green,
                   ),
                 ),
+                onChanged: (phoneNumber) {
+                  userPhoneNumber = phoneNumber;
+                  print(userPhoneNumber);
+                },
               ),
               const SizedBox(height: 20),
               TextFormField(
