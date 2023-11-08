@@ -15,8 +15,8 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 51, 180, 255),
-      appBar: AppBar(title: Text('Login Page')),
+      backgroundColor: const Color.fromARGB(255, 51, 180, 255),
+      appBar: AppBar(title: const Text('Login Page')),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 14),
         child: Center(
@@ -63,8 +63,8 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 20),
               TextFormField(
                 controller: emailContr,
-                style: TextStyle(color: Colors.green),
-                decoration: InputDecoration(
+                style: const TextStyle(color: Colors.green),
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   filled: true,
                   hintText: 'mail@gmail.com',
@@ -110,7 +110,7 @@ class LoginPage extends StatelessWidget {
                   }
                 },
                 child: const Text('Login'),
-              )
+              ),
             ],
           ),
         ),
