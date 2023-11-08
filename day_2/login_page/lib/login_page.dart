@@ -24,13 +24,21 @@ class LoginPage extends StatelessWidget {
               ),
               const Text(
                 'Register',
-                style: TextStyle(color: Colors.white, fontSize: 32),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 32,
+                  decorationColor: Colors.white,
+                ),
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  filled: true,
-                ),
+                    border: OutlineInputBorder(),
+                    filled: true,
+                    hintText: '+996 123 456 789',
+                    prefixIcon: Icon(
+                      Icons.call,
+                      color: Colors.green,
+                    )),
               ),
               TextFormField(),
             ],
