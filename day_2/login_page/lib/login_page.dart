@@ -31,16 +31,30 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               TextFormField(
+                style: TextStyle(color: Colors.green),
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    filled: true,
-                    hintText: '+996 123 456 789',
-                    prefixIcon: Icon(
-                      Icons.call,
-                      color: Colors.green,
-                    )),
+                  border: OutlineInputBorder(),
+                  filled: true,
+                  hintText: '+996 123 456 789',
+                  prefixIcon: Icon(
+                    Icons.call,
+                    color: Colors.green,
+                  ),
+                ),
               ),
-              TextFormField(),
+              SizedBox(height: 20),
+              TextFormField(
+                style: TextStyle(color: Colors.green),
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  filled: true,
+                  hintText: 'mail@gmail.com',
+                  prefixIcon: Icon(
+                    Icons.mail,
+                    color: Colors.green,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
