@@ -12,8 +12,20 @@ class LoginPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Sign In'),
-            Text('Registr'),
+            Text(
+              'Sign In',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 58,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              'Registr',
+              style: TextStyle(color: Colors.white, fontSize: 32),
+            ),
+            TextFormField(),
+            TextFormField(),
           ],
         ),
       ),
