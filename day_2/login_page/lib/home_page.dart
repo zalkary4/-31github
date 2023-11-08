@@ -8,7 +8,17 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Home Page')),
       body: Center(
-        child: Text('Hi!'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text('Hi!'),
+            TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text('Back to Login Page'))
+          ],
+        ),
       ),
     );
   }

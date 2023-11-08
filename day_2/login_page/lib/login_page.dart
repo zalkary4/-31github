@@ -4,8 +4,10 @@ import 'package:login_page/home_page.dart';
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
 
-  var exampleNumber = '+996123456789';
-  var exampleMail = 'mail@gmail.com';
+  var exampleNumber = '123';
+  // var exampleNumber = '+996123456789';
+  var exampleMail = 'qwe';
+  // var exampleMail = 'mail@gmail.com';
   var phoneNumberContr = TextEditingController();
   var emailContr = TextEditingController();
   // String userPhoneNumber = '';
@@ -91,9 +93,17 @@ class LoginPage extends StatelessWidget {
                     showDialog(
                       context: context,
                       builder: (ctx) {
-                        return const AlertDialog(
-                          title: Text('Error'),
-                          content: Text('Wrong number or e-mail'),
+                        return AlertDialog(
+                          title: const Text('Error'),
+                          content: const Text('Wrong number or e-mail'),
+                          actions: [
+                            TextButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              child: const Text('Close'),
+                            ),
+                          ],
                         );
                       },
                     );
