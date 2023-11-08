@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_page/home_page.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
@@ -76,6 +77,12 @@ class LoginPage extends StatelessWidget {
                 onPressed: () {
                   print(phoneNumberContr.text);
                   print(emailContr.text);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => HomePage(),
+                    ),
+                  );
                 },
                 child: Text('Login'),
               )
