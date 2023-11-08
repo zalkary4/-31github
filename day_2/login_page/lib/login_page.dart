@@ -31,10 +31,14 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               TextFormField(
-                style: TextStyle(color: Colors.green),
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+                style: const TextStyle(color: Colors.green),
+                decoration: const InputDecoration(
                   filled: true,
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black),
+                  ),
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.yellow)),
                   hintText: '+996 123 456 789',
                   prefixIcon: Icon(
                     Icons.call,
