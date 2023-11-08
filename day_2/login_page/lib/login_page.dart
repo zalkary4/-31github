@@ -46,7 +46,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               TextFormField(
                 style: TextStyle(color: Colors.green),
                 decoration: InputDecoration(
@@ -59,6 +59,11 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text('Login'),
+              )
             ],
           ),
         ),
