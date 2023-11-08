@@ -4,8 +4,8 @@ import 'package:login_page/home_page.dart';
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
 
-  var exampleMail = 'mail@gmail.com';
   var exampleNumber = '+996123456789';
+  var exampleMail = 'mail@gmail.com';
   var phoneNumberContr = TextEditingController();
   var emailContr = TextEditingController();
   // String userPhoneNumber = '';
@@ -77,12 +77,18 @@ class LoginPage extends StatelessWidget {
                 onPressed: () {
                   print(phoneNumberContr.text);
                   print(emailContr.text);
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomePage(),
-                    ),
-                  );
+
+                  if (exampleNumber == phoneNumberContr.text &&
+                      exampleMail == emailContr.text) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (BuildContext context) => HomePage(),
+                      ),
+                    );
+                  } else {
+                    print('Something wrong');
+                  }
                 },
                 child: Text('Login'),
               )
