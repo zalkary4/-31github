@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue,
-          title: const Text('Flutter!'),
+          title: const Text('Flutter'),
           actions: [
             IconButton(
               onPressed: () {
