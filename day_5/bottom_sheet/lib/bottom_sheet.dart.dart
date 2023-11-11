@@ -23,7 +23,7 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: Text('Close'),
+                    child: Text('Close!'),
                   ),
                 ),
               );
