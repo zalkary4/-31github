@@ -15,7 +15,7 @@ class _TransformWidgetState extends State<TransformWidget> {
       child: Transform(
         transform: Matrix4.rotationZ(pi * 4 / 3),
         alignment: Alignment.center,
-        child: FlutterLogo(size: 300),
+        child: FlutterLogo(size: 200),
       ),
     );
   }
