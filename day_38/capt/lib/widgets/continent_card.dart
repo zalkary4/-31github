@@ -1,6 +1,5 @@
-import 'package:cap_game/models/continent.dart';
+import 'package:animation_cubs/models/continent.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ContinentCard extends StatelessWidget {
   const ContinentCard({

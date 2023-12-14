@@ -1,8 +1,7 @@
-import 'package:cap_game/models/continent.dart';
-import 'package:cap_game/widgets/app_bar_title.dart';
-import 'package:cap_game/widgets/continent_card.dart';
+import 'package:animation_cubs/models/continent.dart';
+import 'package:animation_cubs/widgets/app_bar_title.dart';
+import 'package:animation_cubs/widgets/continent_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);

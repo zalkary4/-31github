@@ -1,4 +1,4 @@
-import 'package:cap_game/widgets/app_bar_title.dart';
+import 'package:animation_cubs/widgets/app_bar_title.dart';
 import 'package:flutter/material.dart';
 
 class HomeDetailView extends StatefulWidget {
